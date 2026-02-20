@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="8" fill="#1a1a2e"/>
+  <text x="100" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="26" fill="#0068B5" letter-spacing="1">Panasonic</text>
+  <text x="100" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#888">Servo &amp; Sensor</text>
+</svg>

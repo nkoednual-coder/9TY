@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" fill="none">
+  <defs>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0094b3;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="320" height="120" fill="#050816"/>
+  
+  <!-- 9 - Large cyan with glow -->
+  <text x="60" y="82" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="80" fill="url(#blueGlow)" filter="url(#strongGlow)">9</text>
+  
+  <!-- Underline glow bar for 9 -->
+  <rect x="22" y="88" width="76" height="4" rx="2" fill="#00d4ff" filter="url(#glow)" opacity="0.9"/>
+  
+  <!-- TY - White bold -->
+  <text x="140" y="80" text-anchor="start" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="68" fill="#E8EAFF" letter-spacing="5">TY</text>
+  
+  <!-- Tagline -->
+  <line x1="108" y1="30" x2="108" y2="90" stroke="#2a3050" stroke-width="1.5"/>
+  <text x="168" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="12" fill="#5a6380" letter-spacing="4">INDUSTRIAL SUPPLIER</text>
+</svg>

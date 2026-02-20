@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="8" fill="#1a1a2e"/>
+  <text x="100" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#0054A6" letter-spacing="2">YASKAWA</text>
+  <text x="100" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#888">Robotics &amp; Drives</text>
+</svg>

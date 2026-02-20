@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Service Filters ---
     initFilters();
 
+    // --- Project Filters ---
+    initProjectFilters();
+
     // --- Contact Form ---
     initContactForm();
 });
@@ -194,7 +197,7 @@ function initScrollAnimations() {
     }, observerOptions);
 
     // Observe all animatable elements
-    document.querySelectorAll('.service-card, .why-card').forEach((el, i) => {
+    document.querySelectorAll('.service-card, .why-card, .project-card').forEach((el, i) => {
         el.style.transitionDelay = `${i % 3 * 0.1}s`;
         el.style.transition = `opacity 0.6s ease, transform 0.6s ease`;
         observer.observe(el);
@@ -313,6 +316,40 @@ function initContactForm() {
         });
         input.addEventListener('blur', () => {
             input.parentElement.classList.remove('focused');
+        });
+    });
+}
+
+/* ============================================
+   PROJECT FILTERS
+   ============================================ */
+function initProjectFilters() {
+    const filterBtns = document.querySelectorAll('.proj-filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+    if (!filterBtns.length || !cards.length) return;
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.dataset.projFilter;
+
+            cards.forEach((card, i) => {
+                const category = card.dataset.projCat;
+                const show = filter === 'all' || category === filter;
+
+                if (show) {
+                    card.classList.remove('hidden');
+                    card.classList.remove('visible');
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                    }, i * 60);
+                } else {
+                    card.classList.add('hidden');
+                    card.classList.remove('visible');
+                }
+            });
         });
     });
 }

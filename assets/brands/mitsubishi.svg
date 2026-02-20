@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="8" fill="#1a1a2e"/>
+  <!-- Mitsubishi Three Diamonds -->
+  <g transform="translate(60, 12)">
+    <polygon points="40,0 50,18 30,18" fill="#E60012"/>
+    <polygon points="25,18 35,36 15,36" fill="#E60012"/>
+    <polygon points="55,18 65,36 45,36" fill="#E60012"/>
+  </g>
+  <text x="100" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="#E8E8E8" letter-spacing="2">MITSUBISHI</text>
+  <text x="100" y="74" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#888">Electric</text>
+</svg>
